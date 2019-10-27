@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='fhir-client.js'></script>
+	
+    <script>
+      FHIR.oauth2.authorize({
+        "client_id": "my_web_app",
+		"redirect_uri": "http://localhost:8081/index.html",
+        "scope":  "patient/*.read"
+      });
+	
+    </script>
+	
+  </head>
+ <body>Loading...</body>
+</html>
